@@ -55,4 +55,18 @@
         <field name="view_id" ref="services_page2_template"/>
     </record>
 
+    <record id="services_page_link" model="website.menu">
+        <field name="name">Services</field>
+        <field name="page_id" ref="services_page"/>
+        <field name="parent_id" ref="website.main_menu" />
+        <field name="sequence" type="int">99</field>
+    </record>
+
+    <record id="services_page2_link" model="website.menu">
+        <field name="name">Services 2</field>
+        <field name="page_id" ref="services_page2"/>
+        <field name="parent_id" ref="website.main_menu" />
+        <field name="sequence" type="int">100</field>
+    </record>
+
  </odoo>
